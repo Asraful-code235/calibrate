@@ -1,27 +1,30 @@
+"use client";
+
 import FAQAccordion, { FAQItem } from "@/components/Faq";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const navItems = [
   {
     id: 1,
     img: "/owl.svg",
-    href: "",
+    href: "https://dexscreener.com/solana/gu1afgdgmfnkhqtglncevfi3akgw4ltjslpkwtqnvqbe",
   },
   {
     id: 2,
     img: "/telegram.svg",
-    href: "",
+    href: "https://t.me/+OzqV28QnRpYyZWRk",
   },
   {
     id: 3,
     img: "/buy.svg",
-    href: "",
+    href: "https://jup.ag/swap/GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF-SOL",
   },
   {
     id: 4,
     img: "/twit.svg",
-    href: "",
+    href: "https://x.com/CalaTheCatSol?s=09",
   },
 ];
 
@@ -187,6 +190,15 @@ const faqData: FAQItem[] = [
   },
 ];
 export default function Home() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const text = "GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF";
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
   return (
     <div className="py-8 px-8 lg:px-[88px] max-w-[1440px] mx-auto w-full flex flex-col gap-16 lg:gap-[126px]">
       <div className="flex items-center gap-4 justify-center w-full">
@@ -212,8 +224,17 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col gap-8 lg:gap-14 max-w-[476px] mx-auto">
-        <button className="button ">BUY $CALA</button>
-        <button className="button">COPY CA</button>
+        <Link
+          href={
+            "https://jup.ag/swap/GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF-SOL"
+          }
+          target="_blank"
+        >
+          <button className="button w-full">BUY $CALA</button>
+        </Link>
+        <button onClick={handleCopy} className="button">
+          {copied ? "Copied!" : " COPY CA "}
+        </button>
         <div className="px-2">
           <Image
             src={"/WE GO MEOW.svg"}
@@ -232,14 +253,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center">
-        <Image
-          src={"/howtobuy.svg"}
-          alt="we go meow"
-          width={496}
-          height={78}
-          className="max-w-[1176px] w-full h-full max-h-[126px] shadow-md max-lg:py-2"
-        />
+      <div className="w-full flex flex-col items-center justify-center">
+        <div className="cursor-pointer">
+          <Image
+            src="/howtobuy.svg"
+            alt="we go meow"
+            width={496}
+            height={78}
+            className="max-w-[1176px] w-full h-full max-h-[126px] shadow-md max-lg:py-2"
+          />
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
         {solItems.map((item, key) => (

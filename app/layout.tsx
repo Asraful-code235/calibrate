@@ -16,6 +16,18 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "CALA",
   description: "WE GO MEOW",
+  openGraph: {
+    type: "website",
+    title: "",
+    description: "",
+    images: [
+      {
+        url: "/cat.svg",
+        width: 2500,
+        height: 1041,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

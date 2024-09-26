@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coiny", system-ui;
+}
+
+.button {
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  font-variant-numeric: lining-nums proportional-nums;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: Coiny;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  border-radius: 8px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  border-bottom: 6px solid #000;
+  border-left: 3px solid #000;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    rgba(244, 237, 224, 0.61);
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: 32px;
+  }
+}
+
+.text {
+  color: rgba(244, 237, 224, 0.61);
+
+  text-align: center;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: Coiny;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 43.75% */
+}

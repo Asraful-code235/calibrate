@@ -271,10 +271,7 @@ export default function Home() {
       </div>
 
       <div className="mt-8 flex flex-col gap-6">
-        <h2 className="text-2xl leading-8 font-semibold">
-          Frequently used crypto terms
-        </h2>
-        <p className="text-base leading-6 font-normal">We go meow!!!</p>
+        <h2 className="text-3xl leading-8 font-semibold">What is Calibrate</h2>
         <FAQAccordion faqData={faqData} />
       </div>
 

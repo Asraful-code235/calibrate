@@ -26,11 +26,11 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ faqData }) => {
             className="flex justify-between items-center w-full py-4"
             onClick={() => toggleAccordion(index)}
           >
-            <span className="text-lg font-medium">{item.question}</span>
+            <span className="text-lg font-semibold">{item.question}</span>
             <span className="text-2xl">{openIndex === index ? "-" : "+"}</span>
           </button>
           {openIndex === index && (
-            <div className=" pb-4 text-base ">{item.answer}</div>
+            <div className=" pb-4 text-base font-medium ">{item.answer}</div>
           )}
         </div>
       ))}

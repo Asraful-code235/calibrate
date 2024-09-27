@@ -9,7 +9,7 @@ const navItems = [
   {
     id: 1,
     img: "/owl.svg",
-    href: "https://dexscreener.com/solana/gu1afgdgmfnkhqtglncevfi3akgw4ltjslpkwtqnvqbe",
+    href: "http://Dexscreener.com",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const navItems = [
   {
     id: 3,
     img: "/buy.svg",
-    href: "https://jup.ag/swap/GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF-SOL",
+    href: "http://Jup.ag",
   },
   {
     id: 4,
@@ -224,7 +224,7 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col gap-8 lg:gap-14 max-w-[476px] mx-auto">
-        <Link
+        {/* <Link
           href={
             "https://jup.ag/swap/GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF-SOL"
           }
@@ -234,7 +234,7 @@ export default function Home() {
         </Link>
         <button onClick={handleCopy} className="button">
           {copied ? "Copied!" : " COPY CA "}
-        </button>
+        </button> */}
         <div className="px-2">
           <div className="w-full flex items-center justify-center">
             <video

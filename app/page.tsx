@@ -3,7 +3,7 @@
 import FAQAccordion, { FAQItem } from "@/components/Faq";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+// import { useState } from "react";
 
 const navItems = [
   {
@@ -190,15 +190,15 @@ const faqData: FAQItem[] = [
   },
 ];
 export default function Home() {
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
 
-  const handleCopy = () => {
-    const text = "GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF";
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
-  };
+  // const handleCopy = () => {
+  //   const text = "GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF";
+  //   navigator.clipboard.writeText(text).then(() => {
+  //     setCopied(true);
+  //     setTimeout(() => setCopied(false), 2000);
+  //   });
+  // };
   return (
     <div className="py-8 px-8 lg:px-[88px] max-w-[1440px] mx-auto w-full flex flex-col gap-16 lg:gap-[126px] ">
       <div className="flex items-center gap-4 justify-center w-full">

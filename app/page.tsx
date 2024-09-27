@@ -200,8 +200,8 @@ export default function Home() {
   //   });
   // };
   return (
-    <div className="py-8 px-8 lg:px-[88px] max-w-[1440px] mx-auto w-full flex flex-col gap-16 lg:gap-[126px] ">
-      <div className="flex items-center gap-4 justify-center w-full">
+    <div className="py-8 lg:px-[88px] max-w-[1440px] mx-auto w-full flex flex-col gap-16 lg:gap-[126px] ">
+      <div className="flex  items-center gap-4 justify-center w-full">
         {navItems.map((item, key) => (
           <Link href={`${item.href}`} target="_blank" key={key}>
             <Image
@@ -214,7 +214,7 @@ export default function Home() {
           </Link>
         ))}
       </div>
-      <div className="w-full mx-auto max-w-[760px] max-h-[351.047px] overflow-hidden h-full bg-[#ece6d9] rounded-xl flex items-center justify-center ">
+      <div className="w-full  px-8 mx-auto max-w-[760px] max-h-[351.047px] overflow-hidden h-full bg-[#ece6d9] rounded-xl flex items-center justify-center ">
         <Image
           src={"/heroimage.jpg"}
           alt="cat"
@@ -223,7 +223,7 @@ export default function Home() {
           className="w-[296px] object-contain"
         />
       </div>
-      <div className="flex flex-col gap-8 lg:gap-14 max-w-[476px] mx-auto">
+      <div className="flex  px-8 flex-col gap-8 lg:gap-14 max-w-[476px] mx-auto">
         {/* <Link
           href={
             "https://jup.ag/swap/GDDWwLFabmv5Dc7hkZQMjJsmfyw41krWhQw7LN2R43yF-SOL"
@@ -235,7 +235,7 @@ export default function Home() {
         <button onClick={handleCopy} className="button">
           {copied ? "Copied!" : " COPY CA "}
         </button> */}
-        <div className="px-2">
+        <div className="px-2 ">
           <div className="w-full flex items-center justify-center">
             <video
               src="/catvideo.mp4"
@@ -249,7 +249,7 @@ export default function Home() {
       <div className="w-full flex flex-col items-center justify-center">
         <h1 className="text-[42px] font-semibold">HOW TO BUY</h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14  px-8">
         {solItems.map((item, key) => (
           <div
             key={key}
@@ -270,7 +270,7 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="mt-8 flex flex-col gap-6">
+      <div className="mt-8 flex flex-col gap-6 bg-black bg-opacity-75 p-4 lg:py-8 px-8 rounded-md">
         <h2 className="text-3xl leading-8 font-semibold">What is Calibrate</h2>
         <FAQAccordion faqData={faqData} />
       </div>

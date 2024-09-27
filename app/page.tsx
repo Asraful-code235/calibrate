@@ -14,7 +14,7 @@ const navItems = [
   {
     id: 2,
     img: "/telegram.svg",
-    href: "https://t.me/+OzqV28QnRpYyZWRk",
+    href: "https://t.me/+hF1u_RMmV8ozNDIx",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const navItems = [
   {
     id: 4,
     img: "/twit.svg",
-    href: "https://x.com/CalaTheCatSol?s=09",
+    href: "https://x.com/calibratesolana?s=09",
   },
 ];
 

@@ -38,7 +38,7 @@ const solItems = [
     img: "/solitem2.jpg",
   },
   {
-    title: "SWAP SOL for CALA:",
+    title: "SWAP SOL for Calibrate:",
     img: "/solitem3.jpg",
   },
   {

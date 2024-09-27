@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,14 +8,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Coiny", system-ui;
+  font-family: "Comic Neue", cursive;
+  color: white;
 }
 
 .button {
   color: #fff;
   text-align: center;
   padding: 4px 8px;
-  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Comic Neue", cursive;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #000;
   font-family: Coiny;
@@ -53,4 +54,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 43.75% */
+}
+
+.bgImage {
+  background-image: url("/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
 }

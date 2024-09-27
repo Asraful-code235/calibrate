@@ -31,19 +31,19 @@ const navItems = [
 const solItems = [
   {
     title: "Download Phantom wallet:",
-    img: "",
+    img: "/solitem1.jpg",
   },
   {
     title: "Get some SOL and send to phantom wallet:",
-    img: "",
+    img: "/solitem2.jpg",
   },
   {
     title: "SWAP SOL for CALA:",
-    img: "",
+    img: "/solitem3.jpg",
   },
   {
     title: "BREATHE:",
-    img: "",
+    img: "/solitem4.jpg",
   },
 ];
 
@@ -200,7 +200,7 @@ export default function Home() {
     });
   };
   return (
-    <div className="py-8 px-8 lg:px-[88px] max-w-[1440px] mx-auto w-full flex flex-col gap-16 lg:gap-[126px]">
+    <div className="py-8 px-8 lg:px-[88px] max-w-[1440px] mx-auto w-full flex flex-col gap-16 lg:gap-[126px] ">
       <div className="flex items-center gap-4 justify-center w-full">
         {navItems.map((item, key) => (
           <Link href={`${item.href}`} target="_blank" key={key}>
@@ -216,7 +216,7 @@ export default function Home() {
       </div>
       <div className="w-full mx-auto max-w-[760px] max-h-[351.047px] overflow-hidden h-full bg-[#ece6d9] rounded-xl flex items-center justify-center ">
         <Image
-          src={"/cat.svg"}
+          src={"/heroimage.jpg"}
           alt="cat"
           width={296}
           height={319.404}
@@ -230,19 +230,12 @@ export default function Home() {
           }
           target="_blank"
         >
-          <button className="button w-full">BUY $CALA</button>
+          <button className="button w-full">BUY </button>
         </Link>
         <button onClick={handleCopy} className="button">
           {copied ? "Copied!" : " COPY CA "}
         </button>
         <div className="px-2">
-          <Image
-            src={"/WE GO MEOW.svg"}
-            alt="we go meow"
-            width={496}
-            height={78}
-            className="w-[496px] h-[78px] "
-          />
           <div className="w-full flex items-center justify-center">
             <video
               src="/catvideo.mp4"
@@ -254,15 +247,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="cursor-pointer">
-          <Image
-            src="/howtobuy.svg"
-            alt="we go meow"
-            width={496}
-            height={78}
-            className="max-w-[1176px] w-full h-full max-h-[126px] shadow-md max-lg:py-2"
-          />
-        </div>
+        <h1 className="text-[42px] font-semibold">HOW TO BUY</h1>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
         {solItems.map((item, key) => (
@@ -270,7 +255,12 @@ export default function Home() {
             key={key}
             className="bg-[#605d58] border-4 border-white shadow-xl rounded-xl px-4 py-8 min-h-[239.296px]"
           >
-            <div className="flex items-start justify-start flex-col gap-2.5">
+            <img
+              src={item.img}
+              alt=""
+              className="aspect-video object-cover origin-top"
+            />
+            <div className="flex items-start justify-start flex-col gap-2.5 mt-4">
               <h2 className="text-sm leading-[32px] text-white">
                 {item.title}
               </h2>
@@ -281,14 +271,14 @@ export default function Home() {
       </div>
 
       <div className="mt-8 flex flex-col gap-6">
-        <h2 className="text-2xl leading-8 font-semibold text-[#1E2025]">
+        <h2 className="text-2xl leading-8 font-semibold">
           Frequently used crypto terms
         </h2>
         <p className="text-base leading-6 font-normal">We go meow!!!</p>
         <FAQAccordion faqData={faqData} />
       </div>
 
-      <div className="w-full flex items-center justify-center mb-20">
+      <div className="w-full flex items-center justify-center mb-20 ">
         <Image src={"/footer.svg"} alt="nav_item" width={1060} height={184} />
       </div>
     </div>

@@ -30,9 +30,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ faqData }) => {
             <span className="text-2xl">{openIndex === index ? "-" : "+"}</span>
           </button>
           {openIndex === index && (
-            <div className="pl-4 pb-4 text-base text-gray-700">
-              {item.answer}
-            </div>
+            <div className=" pb-4 text-base ">{item.answer}</div>
           )}
         </div>
       ))}

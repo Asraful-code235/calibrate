@@ -14,15 +14,15 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CALA",
-  description: "WE GO MEOW",
+  title: "CALIBRATE",
+  description: "CALIBRATE",
   openGraph: {
     type: "website",
     title: "",
     description: "",
     images: [
       {
-        url: "/cat.svg",
+        url: "/logo.png",
         width: 2500,
         height: 1041,
       },
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F4EDE0]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bgImage `}
       >
         {children}
       </body>

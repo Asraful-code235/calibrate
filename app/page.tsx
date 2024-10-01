@@ -156,7 +156,7 @@ export default function Home() {
             src="/loading.mp4"
             autoPlay
             muted
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain md:object-cover"
             onEnded={() => setIsLoading(false)}
           />
         </div>

@@ -53,7 +53,7 @@ export default function Home() {
   useEffect(() => {
     const videoTimeout = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 5000);
 
     return () => clearTimeout(videoTimeout);
   }, []);

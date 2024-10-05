@@ -80,7 +80,7 @@ export default function Home() {
               alt="cat"
               width={296}
               height={319.404}
-              className="w-[296px] object-contain"
+              className="w-[496px] object-contain"
             />
           </div>
           <div className="flex  px-8 flex-col gap-8 lg:gap-14 max-w-[476px] mx-auto">
